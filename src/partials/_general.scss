@@ -1,0 +1,13 @@
+@include reset;
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: $coloreBody;
+    font-size: $fontSizeStandard;
+}
+
+.container-dischi {
+    @include maxWidth;
+    padding-top: $divisoreHeaderDischi;
+    @include my-flex(row,space-around,center,wrap);
+}

@@ -1,0 +1,28 @@
+.card-disco {
+    background-color: $coloreCardsBackground;
+    width: $larghezzaCards;
+    height: $altezzaCards;
+    padding: 20px;
+    margin-bottom: 50px;
+    @include my-flex(column,space-around,center,nowrap);
+    border-radius: 20px;
+    overflow: hidden;
+    img.poster {
+        width: 100%;
+        object-fit: cover;
+    };
+    .title{
+        color: $coloreCardsTitle;
+        margin: 10px 0;
+        font-size: $fontSizeTitle;
+        font-weight: bold;
+    };
+    .author{
+        color: $coloreCardsAuthor;
+    };
+    .year{
+        color: $coloreCardsYear;
+        font-size: $fontSizeSmall;
+
+    };
+}

@@ -1,0 +1,14 @@
+
+
+header {
+    height: $altezzaHeader;
+    line-height: $altezzaHeader;
+    background-color: $coloreHeader;
+    .container-header {
+        @include maxWidth;
+        img.logo {
+            height: $altezzaHeader*0.8;
+            vertical-align: middle;
+        }
+    }
+}

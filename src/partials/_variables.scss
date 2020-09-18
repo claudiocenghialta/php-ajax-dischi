@@ -1,0 +1,23 @@
+
+// altezze e dimensioni sezioni
+
+$altezzaHeader : 70px;
+$maxWidth: 1200px;
+$larghezzaCards: 350px;
+$altezzaCards: calc(#{$larghezzaCards} * 1.4);
+$divisoreHeaderDischi: 80px;
+
+
+// colori
+$coloreHeader: #040404;
+$coloreBody: #121212;
+$coloreCardsBackground: #282828;
+$coloreCardsTitle: white;
+$coloreCardsAuthor: #adadad;
+$coloreCardsYear: white;
+
+
+//font e font-size
+$fontSizeTitle : 20px;
+$fontSizeStandard : 16px;
+$fontSizeSmall: 14px;

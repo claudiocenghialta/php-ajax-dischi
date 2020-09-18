@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;
+
+300;400;500;700;900&display=swap);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #121212;
+  font-size: 16px;
+}
+
+.container-dischi {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header {
+  height: 70px;
+  line-height: 70px;
+  background-color: #040404;
+}
+
+header .container-header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .container-header img.logo {
+  height: 56px;
+  vertical-align: middle;
+}
+
+.card-disco {
+  background-color: #282828;
+  width: 350px;
+  height: calc(350px * 1.4);
+  padding: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-disco img.poster {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-disco .title {
+  color: white;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-disco .author {
+  color: #adadad;
+}
+
+.card-disco .year {
+  color: white;
+  font-size: 14px;
+}
+
