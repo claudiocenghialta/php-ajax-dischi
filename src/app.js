@@ -46,7 +46,7 @@ function filteredData(filter) {
     });
 };
 
-
+// funzione per stampare i risultati nell'elenco dei dischi e creare le varie cards
 function stampaRisultati (array) {
     svuotaRisultati();
     var source = $("#entry-template").html();
@@ -65,6 +65,7 @@ function stampaRisultati (array) {
 
 };
 
+// funzione per popolare la select con l'elenco degli artisti
 function stampaSelect (array) {
     var source = $("#select-template").html();
     var template = Handlebars.compile(source);
@@ -86,6 +87,7 @@ function svuotaRisultati () {
     $('.container-dischi').empty();
 }
 
+// funzione per fare chiamata Ajax ed ottenere i risultati di tutti gli artisti oppure solo quelli relativi all'artista selezionato nella select
 function filtraAuthor(){
     $('.select-author option').on('click',function(){
         var value= $(this).val();
