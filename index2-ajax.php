@@ -17,6 +17,9 @@
     <header>
         <div class="container-header">
             <img src="https://i0.wp.com/azmagazine.co.uk/wp-content/uploads/2018/08/spotify-logo.png?resize=820%2C615" alt="logo" class="logo">
+            <select class="select-author" name="">
+                <option value="All">All</option>
+            </select>
         </div>
     </header>
     <div class="container-dischi">
@@ -26,6 +29,7 @@
 
     </div>
 
+    <!-- template cards dischi -->
     <script id="entry-template" type="text/x-handlebars-template">
         <div class="card-disco">
             <img class="poster" src="{{poster}}" alt="{{title}}">
@@ -33,6 +37,10 @@
             <div class="author">{{author}}</div>
             <div class="year">{{year}}</div>
         </div>
+    </script>
+    <!-- template select author -->
+    <script id="select-template" type="text/x-handlebars-template">
+        <option value="{{Author}}">{{Author}}</option>
     </script>
 
     <script src="dist/app.js" charset="utf-8"></script>

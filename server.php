@@ -1,8 +1,8 @@
 <?php
-    error_reporting(0);
+    // error_reporting(0);
     include 'dischi-db.php';
     header('Content-Type: application/json');
-    if (is_null($_GET['author'])) {
+    if (!isset($_GET['author']) || empty($_GET['author'])) {
         echo json_encode($database);
     } else {
         $author = $_GET['author'];

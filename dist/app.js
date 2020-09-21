@@ -10989,8 +10989,13 @@ function getDatabase() {
     method: 'GET',
     url: 'http://localhost/php-ajax-dischi/server.php',
     success: function success(data) {
-      console.log(data);
       stampaRisultati(data);
+
+      if ($('.select-author').children().length == 1) {
+        stampaSelect(data);
+      }
+
+      filtraAuthor();
     },
     error: function error(_error) {
       alert('errore');
@@ -10999,9 +11004,30 @@ function getDatabase() {
   });
 }
 
+; //chiamata ajax per elenco filtrato per autore
+
+function filteredData(filter) {
+  $.ajax({
+    method: 'GET',
+    url: 'http://localhost/php-ajax-dischi/server.php',
+    data: {
+      author: filter
+    },
+    success: function success(data) {
+      console.log(data);
+      stampaRisultati(data);
+    },
+    error: function error(_error2) {
+      alert('errore');
+      console.log(_error2);
+    }
+  });
+}
+
 ;
 
 function stampaRisultati(array) {
+  svuotaRisultati();
   var source = $("#entry-template").html();
   var template = Handlebars.compile(source);
 
@@ -11021,9 +11047,44 @@ function stampaRisultati(array) {
 
 ;
 
-function stampaSelect(array) {}
+function stampaSelect(array) {
+  var source = $("#select-template").html();
+  var template = Handlebars.compile(source);
+  var elencoAutori = [];
+
+  for (var i = 0; i < array.length; i++) {
+    if (!elencoAutori.includes(array[i].author)) {
+      var context = {
+        Author: array[i].author
+      };
+      var html = template(context);
+      $('.select-author').append(html);
+      elencoAutori.push(array[i].author);
+    }
+
+    ;
+  }
+
+  ;
+}
 
 ;
+
+function svuotaRisultati() {
+  $('.container-dischi').empty();
+}
+
+function filtraAuthor() {
+  $('.select-author option').on('click', function () {
+    var value = $(this).val();
+
+    if (value == "All") {
+      getDatabase();
+    } else {
+      filteredData(value);
+    }
+  });
+}
 
 /***/ }),
 
