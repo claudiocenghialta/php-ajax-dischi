@@ -2,6 +2,7 @@
 // altezze e dimensioni sezioni
 
 $altezzaHeader : 70px;
+$altezzaLogo : $altezzaHeader*0.8;
 $maxWidth: 1200px;
 $larghezzaCards: 350px;
 $altezzaCards: calc(#{$larghezzaCards} * 1.4);

@@ -1,9 +1,6 @@
 <?php
     include 'dischi-db.php';
-    // foreach ($database as $disco) {
-    //     var_dump($disco);
-    // };
-
+    
 ?>
 
 
@@ -37,6 +34,7 @@
 
     </div>
 
+    <!-- <script src="dist/app.js" charset="utf-8"></script> -->
 
 </body>
 

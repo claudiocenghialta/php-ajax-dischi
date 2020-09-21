@@ -4,7 +4,7 @@
     height: $altezzaCards;
     padding: 20px;
     margin-bottom: 50px;
-    @include my-flex(column,space-around,center,nowrap);
+    @include my-flex(space-around,center,column,nowrap);
     border-radius: 20px;
     overflow: hidden;
     img.poster {

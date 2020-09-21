@@ -5,7 +5,7 @@
         box-sizing: border-box;
     }
 }
-@mixin my-flex ($direction,$justify,$align,$wrap) {
+@mixin my-flex ($justify,$align,$direction:row,$wrap:wrap) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;

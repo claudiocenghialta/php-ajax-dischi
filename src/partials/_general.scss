@@ -9,5 +9,5 @@ body {
 .container-dischi {
     @include maxWidth;
     padding-top: $divisoreHeaderDischi;
-    @include my-flex(row,space-around,center,wrap);
+    @include my-flex(space-around,center);
 }

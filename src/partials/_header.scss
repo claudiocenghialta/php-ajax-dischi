@@ -7,7 +7,7 @@ header {
     .container-header {
         @include maxWidth;
         img.logo {
-            height: $altezzaHeader*0.8;
+            height: $altezzaLogo;
             vertical-align: middle;
         }
     }
