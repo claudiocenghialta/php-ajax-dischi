@@ -39,6 +39,8 @@ function stampaRisultati (array) {
         $('.container-dischi').append(html);
     };
 
+};
 
+function stampaSelect (array) {
 
 };
