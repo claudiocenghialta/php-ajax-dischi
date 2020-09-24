@@ -10987,7 +10987,7 @@ $(document).ready(function () {
 function getDatabase() {
   $.ajax({
     method: 'GET',
-    url: 'http://localhost/php-ajax-dischi/server.php',
+    url: 'http://localhost:8888/php-ajax-dischi/server.php',
     success: function success(data) {
       stampaRisultati(data);
 
@@ -11009,7 +11009,7 @@ function getDatabase() {
 function filteredData(filter) {
   $.ajax({
     method: 'GET',
-    url: 'http://localhost/php-ajax-dischi/server.php',
+    url: 'http://localhost:8888/php-ajax-dischi/server.php',
     data: {
       author: filter
     },
@@ -11107,8 +11107,8 @@ function filtraAuthor() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/claudio/playground/php-ajax-dischi/src/app.js */"./src/app.js");
-module.exports = __webpack_require__(/*! /home/claudio/playground/php-ajax-dischi/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! D:\playground\php-ajax-dischi\src\app.js */"./src/app.js");
+module.exports = __webpack_require__(/*! D:\playground\php-ajax-dischi\src\app.scss */"./src/app.scss");
 
 
 /***/ })

@@ -12,7 +12,7 @@ $(document).ready(function(){
 function getDatabase() {
     $.ajax({
         method: 'GET',
-        url: 'http://localhost/php-ajax-dischi/server.php',
+        url: 'http://localhost:8888/php-ajax-dischi/server.php',
         success: function(data){
             stampaRisultati(data);
             if ($('.select-author').children().length ==1) {
@@ -31,7 +31,7 @@ function getDatabase() {
 function filteredData(filter) {
     $.ajax({
         method: 'GET',
-        url: 'http://localhost/php-ajax-dischi/server.php',
+        url: 'http://localhost:8888/php-ajax-dischi/server.php',
         data: {
             author: filter,
         },
